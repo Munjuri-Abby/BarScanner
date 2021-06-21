@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterAdmin"
+    android:background="@drawable/backgroundgradient">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="236dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/codescan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-90dp"
+        android:fontFamily="@font/merienda_one"
+        android:text="ADMINS"
+        android:textColor="#C1F6F3F3"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-56dp"
+        android:background="#11000000"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/ic_account"
+        android:textColorHint="#ffff"/>
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_alignBottom="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-56dp"
+        android:background="#11000000"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/ic_number"
+        android:textColorHint="#ffff"/>
+
+
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+        android:textColorHint="#ffff"
+        android:ems="10"
+        android:textColor="#fff"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/passwordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+        android:textColorHint="#ffff"
+        android:ems="10"
+        android:textColor="#fff"
+        android:hint="Confirm Password"
+        android:drawableLeft="@drawable/ic_vpn_key"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-81dp"
+        android:background="@color/purple_700"
+        android:text="Sign Up"
+        android:textColor="#E91E63"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

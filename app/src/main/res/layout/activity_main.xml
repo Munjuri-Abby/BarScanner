@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/codescan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-126dp"
+        android:fontFamily="@font/merienda_one"
+        android:text="Q-Fix"
+        android:gravity="center"
+        android:textColor="#F0F5FA"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginButtonMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-55dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_person_login"
+        android:fontFamily="@font/merienda_one"
+        android:hint="Login"
+        android:onClick="login"
+        android:textColorHint="#ffff"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/SignUpMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LoginButtonMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-62dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_person_register"
+        android:fontFamily="@font/merienda_one"
+        android:hint="Register"
+        android:onClick="register"
+        android:textColorHint="#FFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

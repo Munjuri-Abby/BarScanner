@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="252dp"
+        android:layout_height="218dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/codescan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-88dp"
+        android:fontFamily="@font/merienda_one"
+        android:text="Q-Fix"
+        android:textColor="#C1F3F0F0"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-65dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_account"
+        android:ems="10"
+        android:hint="PhoneNumber"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/emailSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:password="true"
+        android:drawableLeft="@drawable/ic_lock"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-94dp"
+        android:background="@color/black"
+        android:text="Login"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/merienda_one"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-78dp"
+        android:textColor="@color/white"
+        android:text="Forgot Password ?"
+        android:clickable="true"/>
+
+    <!--    <TextView-->
+<!--        android:id="@+id/adminLink"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="36dp"-->
+<!--        android:layout_marginBottom="215dp"-->
+<!--        android:text=" I'm an Admin"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:background="@color/black"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/userLink"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="52dp"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:layout_marginBottom="215dp"-->
+<!--        android:text="I'm a user"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/black"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="invisible" />-->
+    <TextView
+        android:id="@+id/user_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_marginBottom="-48dp"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="I'm a user"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/merienda_one"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/admin_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_marginBottom="-48dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:fontFamily="@font/merienda_one"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:text="I'm an Admin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
+

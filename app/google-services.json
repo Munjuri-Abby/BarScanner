@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856543468998",
+    "project_id": "barscanner-dfdb3",
+    "storage_bucket": "barscanner-dfdb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856543468998:android:a499c2487ec262fee2a6c7",
+        "android_client_info": {
+          "package_name": "com.example.barscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856543468998-7amqnmtiibut4jsl0qgtu8l1usfk4oka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy8uHE5EDOMJ8RfcLvpVZ6mL0_-Wlje_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856543468998-7amqnmtiibut4jsl0qgtu8l1usfk4oka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

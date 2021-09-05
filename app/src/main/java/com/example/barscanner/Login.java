@@ -52,8 +52,8 @@ public class Login extends AppCompatActivity {
         progressBar = new ProgressDialog(this);
 
 //        TODO Remove me am for testing
-        InputPhoneNumber.setText("0746287172");
-        InputPassword.setText("foobarbaz");
+//        InputPhoneNumber.setText("0746287172");
+//        InputPassword.setText("foobarbaz");
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,7 +183,7 @@ public class Login extends AppCompatActivity {
                                 progressBar.dismiss();
 
                                 Intent intent = new Intent(Login.this, Home.class);
-                                Prevalent.currentOnlineUser = usersData;
+                                    Prevalent.currentOnlineUser = usersData;
                                 startActivity(intent);
                             }
                         }

@@ -1,6 +1,6 @@
 package com.example.barscanner;
 
-import android.app.Activity;
+import com.journeyapps.barcodescanner.CaptureActivity;
 
-public class Capture extends Activity {
+public class Capture extends CaptureActivity {
 }

@@ -40,7 +40,6 @@ public class Scan extends AppCompatActivity implements ZXingScannerView.ResultHa
         super.onPause();
         scannerView.stopCamera();
     }
-
     @Override
     protected void onPostResume() {
         super.onPostResume();

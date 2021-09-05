@@ -76,33 +76,34 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/cart_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="right"
             android:layout_margin="10dp">
+
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:gravity="right"
-                android:text="Total $:  "
-                android:textStyle="bold"
+                android:text="Total $:"
+                android:textAppearance="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
                 android:textSize="25dp"
-                android:textAppearance="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
+                android:textStyle="bold" />
 
             <TextView
+                android:layout_marginBottom="10dp"
                 android:id="@+id/total_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:gravity="right"
                 android:layout_marginRight="5dp"
-                android:text=""
+                android:text="50"
                 android:textSize="25dp"
                 android:textAppearance="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"/>
 

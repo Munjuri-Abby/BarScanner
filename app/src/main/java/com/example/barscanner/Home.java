@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.barscanner.ewallet.EWalletActivity;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -77,7 +78,15 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         databaseReferenceTest.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                System.out.println("foo");
+//                System.out.println("foo");
+//                HashMap<String ,String > hashMap = new HashMap<>();
+//
+//                hashMap.put("productName", "Motorbike");
+//                hashMap.put("productPrice", "500");
+//                hashMap.put("quantity", "1");
+//                databaseReferenceTest.child("CartItems").child("61600980").setValue(hashMap);
+
+//                databaseReferenceTest.child("EWallet").removeValue();
             }
 
             @Override
@@ -342,7 +351,9 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 Intent intent = new Intent(Home.this, ShoppingCart.class);
                 startActivity(intent);
             }
-        } else if (id == R.id.nav_scan) {
+        }else if (id == R.id.navEWallet){
+            startActivity(new Intent(getBaseContext(), EWalletActivity.class));
+        }else if (id == R.id.nav_scan) {
             if (!type.equals("Admin")) {
                 scanCode();
             }

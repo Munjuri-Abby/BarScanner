@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BarScanner">
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".ewallet.EWalletActivity"></activity>
+        <activity android:name=".MainActivity2" />
         <activity android:name=".Offers" />
         <activity android:name=".Scan" />
         <activity android:name=".AdminAddItem" />
